@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DeployOnRender</title>
+    <title>Rails on Render</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -13,7 +13,15 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="bg-light">
+    <main class="container py-5">
+      <%= yield %>
+
+      <div class="container mt-4 mb-4">
+        <a href="https://render.com">
+          <%= image_tag 'banner.jpg', class: 'mw-100' %>
+        </a>
+      </div>
+    </main>
   </body>
 </html>
