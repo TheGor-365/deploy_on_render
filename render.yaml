@@ -1,7 +1,7 @@
 databases:
   - name: render_pro
     databaseName: render_pro
-    user: postgres
+    user: render_pro
 
 services:
   - type: web
